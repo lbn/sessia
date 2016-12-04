@@ -1,0 +1,19 @@
+version: "2"
+services:
+  consul:
+    image: consul:0.7.1
+    container_name: sessia-consul
+    ports:
+      - "8400:8400"
+      - "8500:8500"
+      - "8600:53"
+    command: "agent -server -dev -client 0.0.0.0 -ui-dir /ui"
+  registrator:
+    image: gliderlabs/registrator:latest
+    command: "consul://sessia-consul:8500"
+    container_name: registrator
+    hostname: main
+    depends_on:
+    - consul
+    volumes:
+    - /var/run/docker.sock:/tmp/docker.sock

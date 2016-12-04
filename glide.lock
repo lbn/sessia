@@ -1,0 +1,30 @@
+hash: b3392c07ea0412f772efd60e42f0c7c732011bda82771cd4dc2542b41cf6a9a4
+updated: 2016-12-04T13:56:46.651718914Z
+imports:
+- name: github.com/gorilla/context
+  version: 08b5f424b9271eedf6f9f0ce86cb9396ed337a42
+- name: github.com/gorilla/mux
+  version: 757bef944d0f21880861c2dd9c871ca543023cba
+- name: github.com/hashicorp/consul
+  version: a9455cd4fc2809570ff1855c37d6ffc2449bd42f
+  subpackages:
+  - api
+- name: github.com/hashicorp/go-cleanhttp
+  version: ad28ea4487f05916463e2423a55166280e8254b5
+- name: github.com/hashicorp/serf
+  version: f679d7594a349263f6118db40d87122d3a474e7d
+  subpackages:
+  - coordinate
+- name: github.com/satori/go.uuid
+  version: 879c5887cd475cd7864858769793b2ceb0d44feb
+- name: gopkg.in/bsm/ratelimit.v1
+  version: db14e161995a5177acef654cb0dd785e8ee8bc22
+- name: gopkg.in/redis.v5
+  version: 854c88a72c8bb9c09936145aef886b7697d6b995
+  subpackages:
+  - internal
+  - internal/consistenthash
+  - internal/hashtag
+  - internal/pool
+  - internal/proto
+testImports: []
